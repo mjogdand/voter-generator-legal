@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voter Generator — Aigentools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top">
+    <a class="brand" href="index.html">Voter Generator</a>
+    <div class="links">
+      <a href="legal/contact-us.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <h1>Voter Generator</h1>
+    <p class="updated">by Aigentools</p>
+
+    <p>
+      Voter Generator is a desktop application that recovers clean, searchable
+      text from voter-list PDFs and generates printable voter slips. All PDF
+      and Excel processing happens locally on your own device — nothing you
+      upload is sent to our servers.
+    </p>
+
+    <h2>Policies</h2>
+    <div class="card-grid">
+      <a class="card-link" href="legal/privacy-policy.html">
+        <strong>Privacy Policy</strong>
+        <span>What we collect, and what we deliberately don't</span>
+      </a>
+      <a class="card-link" href="legal/terms-of-service.html">
+        <strong>Terms &amp; Conditions</strong>
+        <span>Rules for using the app and wallet</span>
+      </a>
+      <a class="card-link" href="legal/refund-policy.html">
+        <strong>Refund &amp; Cancellation Policy</strong>
+        <span>Wallet top-ups, failed jobs, and refunds</span>
+      </a>
+      <a class="card-link" href="legal/contact-us.html">
+        <strong>Contact Us</strong>
+        <span>Support and grievance contact</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="legal-footer">
+    &copy; <span id="year"></span> Aigentools. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
