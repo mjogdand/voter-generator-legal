@@ -1,3 +1,6 @@
+/* legal.aigentools.in stylesheet. Source of truth: legal/legal-site.css in mjogdand/voterslip-desktop-app;
+   published by legal/publish-legal-site.sh. Do not edit the copy in voter-generator-legal. */
+
 :root {
   color-scheme: light dark;
   --bg: #f5f6f8;
@@ -135,6 +138,62 @@ footer.legal-footer {
   margin: 40px auto 0;
   padding: 24px;
   border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+nav.top .links {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 4px;
+}
+
+ol {
+  padding-left: 24px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 24px 0 8px;
+}
+
+.legal-version {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Key terms: the points a user must not miss, boxed and numbered so they do
+   not read as one more paragraph of legal text. */
+.legal-key {
+  margin: 24px 0;
+  padding: 18px 22px;
+  background: #fff6e5;
+  border: 2px solid #e3a008;
+  border-left-width: 8px;
+  border-radius: 10px;
+}
+
+.legal-key h2,
+.legal-key h3 {
+  margin-top: 0;
+}
+
+.legal-key li {
+  margin-bottom: 8px;
+}
+
+.legal-key p:last-child {
+  margin-bottom: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .legal-key {
+    background: #2a2312;
+    border-color: #d39b1c;
+  }
+}
+
+.site-note {
   color: var(--text-muted);
   font-size: 0.85rem;
 }
